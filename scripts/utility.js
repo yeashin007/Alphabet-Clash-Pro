@@ -20,15 +20,18 @@ function randomAlphabet() {
   const letter = alphaArray[index];
   return letter;
 }
-const letter = randomAlphabet();
 
 // function for display letter
-function displayLetter() {
+function displayLetter(letter) {
   document.getElementById("text-display").innerText = letter;
 }
 
 // function to add bgcolor
-function setBgColor() {
+function setBgColor(letter) {
   const element = document.getElementById(letter);
   element.classList.add("bg-orange-400");
+}
+function removeBgColor(expected) {
+  const element = document.getElementById(expected);
+  element.classList.remove("bg-orange-400");
 }

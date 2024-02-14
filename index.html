@@ -107,24 +107,28 @@
             >
               Life
               <img src="images/heart-circle.png" alt="heart pic" />
-              <span>1</span>
+              <span id="life-display">1</span>
             </button>
             <button
               class="btn rounded-full px-7 py-2 bg-[#360490] hover:bg-[#894189] text-white"
             >
               Score
               <img src="images/dolor.png" alt="dolor pic" />
-              <span>1</span>
+              <span id="score-display">1</span>
             </button>
           </div>
         </div>
       </section>
 
       <!-- Score Section -->
-      <section id="Score" class="hidden">
+      <section id="score" class="hidden">
         <div class="space-y-3 p-5 rounded-xl bg-[#ffffff66]">
-          <h2 class="text-4xl font-bold">Score <span>1</span></h2>
+          <h4 class="text-2xl">Game over...😂</h4>
+          <h2 class="text-6xl font-bold">
+            Score: <span id="final-score">0</span>
+          </h2>
           <button
+            onclick="playAgain()"
             class="btn bg-white text-black text-lg font-bold hover:bg-transparent border-transparent hover:border-white hover:text-white"
           >
             Play Again
